@@ -1,6 +1,7 @@
 // src/App.jsx
 
 import WeatherForecast from './components/WeatherForecast/WeatherForecast.jsx'
+import './App.css';
 
 const weatherForecasts = [
   {
@@ -47,9 +48,9 @@ const App = () => {
     <>
       <h1>Local Weather</h1>
       <section>
-        <p>
+        <div>
           <WeatherForecast dayArray = {weatherForecasts} />
-        </p>
+        </div>
       </section>
     </>
 

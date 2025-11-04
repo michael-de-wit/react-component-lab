@@ -9,15 +9,17 @@ const WeatherForecast = (props) => {
     const { dayArray } = props;
     console.log(props);
     return (
-        <div className='weather'>
+        <>
             {dayArray.map((dayOfWeek, index) => (
                 <>
+                    <div className='weather'>
                     <h2>{dayOfWeek.day}</h2>
                     <WeatherIcon key={index} img={dayOfWeek.img} imgAlt={dayOfWeek.imgAlt} />
                     <WeatherData key={index} conditions={dayOfWeek.conditions} time={dayOfWeek.time} />
+                    </div>
                 </>
             ))}
-        </div>
+        </>
     )
 }
 
